@@ -7,6 +7,9 @@
     "build": "webextension-toolbox build"
   },
   "devDependencies": {
+    "@types/firefox-webext-browser": "^58.0.4",
+    "ts-loader": "^5.2.0",
+    "typescript": "^3.0.3",
     "webextension-toolbox": "latest"
   }
 }

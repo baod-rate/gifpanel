@@ -11,7 +11,7 @@
   },
   "background": {
     "scripts": [
-      "scripts/background.js"
+      "scripts/background.ts"
     ]
   },
   "options_ui": {
@@ -21,14 +21,14 @@
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "http://github.com/*",
+        "https://github.com/*"
       ],
       "css": [
         "styles/contentscript.css"
       ],
       "js": [
-        "scripts/contentscript.js"
+        "scripts/contentscript.ts"
       ],
       "run_at": "document_end",
       "all_frames": false
