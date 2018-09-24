@@ -12,18 +12,18 @@ module.exports = {
                 resolve('app', '?(scripts)/*.{js,mjs,jsx,ts,tsx}')
             ]
         )
-        /* // add tslint support
+        // add tslint support
         config.module.rules.push({
-          test: /\.tsx?$/,
-          enforce: 'pre',
-          use: [{
-            loader: 'tslint-loader',
-            options: {
-              tsConfigFile: 'tsconfig.json',
-              emitErrors: true
-            }
-          }]
-        }) */
+            test: /\.tsx?$/,
+            enforce: 'pre',
+            use: [{
+                loader: 'tslint-loader',
+                options: {
+                    tsConfigFile: 'tsconfig.json',
+                    emitErrors: true
+                }
+            }]
+        })
 
         config.module.rules.push({
             test: /\.tsx?$/,
